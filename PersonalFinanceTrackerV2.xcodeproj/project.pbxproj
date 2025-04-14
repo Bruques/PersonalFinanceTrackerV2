@@ -16,6 +16,16 @@
 		0EA7046F2DAC9DBE00452B6F /* PersonalFinanceTrackerV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7046E2DAC9DBE00452B6F /* PersonalFinanceTrackerV2Tests.swift */; };
 		0EA704792DAC9DBE00452B6F /* PersonalFinanceTrackerV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA704782DAC9DBE00452B6F /* PersonalFinanceTrackerV2UITests.swift */; };
 		0EA7047B2DAC9DBE00452B6F /* PersonalFinanceTrackerV2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7047A2DAC9DBE00452B6F /* PersonalFinanceTrackerV2UITestsLaunchTests.swift */; };
+		0EA7049A2DACA08700452B6F /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA704872DACA08700452B6F /* BudgetView.swift */; };
+		0EA7049B2DACA08700452B6F /* CategoriesFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA704892DACA08700452B6F /* CategoriesFormView.swift */; };
+		0EA7049C2DACA08700452B6F /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7048A2DACA08700452B6F /* CategoriesListView.swift */; };
+		0EA7049D2DACA08700452B6F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7048C2DACA08700452B6F /* HomeView.swift */; };
+		0EA7049E2DACA08700452B6F /* MoreOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7048E2DACA08700452B6F /* MoreOptionsView.swift */; };
+		0EA7049F2DACA08700452B6F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA704902DACA08700452B6F /* ProfileView.swift */; };
+		0EA704A02DACA08700452B6F /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA704922DACA08700452B6F /* TabbarView.swift */; };
+		0EA704A12DACA08700452B6F /* TransactionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA704942DACA08700452B6F /* TransactionFormView.swift */; };
+		0EA704A22DACA08700452B6F /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA704952DACA08700452B6F /* TransactionsListView.swift */; };
+		0EA704A52DACA16B00452B6F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA704A42DACA16B00452B6F /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		0EA704742DAC9DBE00452B6F /* PersonalFinanceTrackerV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalFinanceTrackerV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA704782DAC9DBE00452B6F /* PersonalFinanceTrackerV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceTrackerV2UITests.swift; sourceTree = "<group>"; };
 		0EA7047A2DAC9DBE00452B6F /* PersonalFinanceTrackerV2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceTrackerV2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EA704872DACA08700452B6F /* BudgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		0EA704892DACA08700452B6F /* CategoriesFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesFormView.swift; sourceTree = "<group>"; };
+		0EA7048A2DACA08700452B6F /* CategoriesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
+		0EA7048C2DACA08700452B6F /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0EA7048E2DACA08700452B6F /* MoreOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsView.swift; sourceTree = "<group>"; };
+		0EA704902DACA08700452B6F /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0EA704922DACA08700452B6F /* TabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		0EA704942DACA08700452B6F /* TransactionFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionFormView.swift; sourceTree = "<group>"; };
+		0EA704952DACA08700452B6F /* TransactionsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		0EA704A42DACA16B00452B6F /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,8 @@
 		0EA704562DAC9DBD00452B6F /* PersonalFinanceTrackerV2 */ = {
 			isa = PBXGroup;
 			children = (
+				0EA704A42DACA16B00452B6F /* CoreDataStack.swift */,
+				0EA704992DACA08700452B6F /* View */,
 				0EA704572DAC9DBD00452B6F /* PersonalFinanceTrackerV2App.swift */,
 				0EA704592DAC9DBD00452B6F /* Persistence.swift */,
 				0EA7045E2DAC9DBD00452B6F /* ContentView.swift */,
@@ -133,6 +155,78 @@
 				0EA7047A2DAC9DBE00452B6F /* PersonalFinanceTrackerV2UITestsLaunchTests.swift */,
 			);
 			path = PersonalFinanceTrackerV2UITests;
+			sourceTree = "<group>";
+		};
+		0EA704882DACA08700452B6F /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				0EA704872DACA08700452B6F /* BudgetView.swift */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		0EA7048B2DACA08700452B6F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0EA704892DACA08700452B6F /* CategoriesFormView.swift */,
+				0EA7048A2DACA08700452B6F /* CategoriesListView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0EA7048D2DACA08700452B6F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0EA7048C2DACA08700452B6F /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0EA7048F2DACA08700452B6F /* More */ = {
+			isa = PBXGroup;
+			children = (
+				0EA7048E2DACA08700452B6F /* MoreOptionsView.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		0EA704912DACA08700452B6F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0EA704902DACA08700452B6F /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0EA704932DACA08700452B6F /* TabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				0EA704922DACA08700452B6F /* TabbarView.swift */,
+			);
+			path = TabbarView;
+			sourceTree = "<group>";
+		};
+		0EA704962DACA08700452B6F /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				0EA704942DACA08700452B6F /* TransactionFormView.swift */,
+				0EA704952DACA08700452B6F /* TransactionsListView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		0EA704992DACA08700452B6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EA704882DACA08700452B6F /* Budget */,
+				0EA7048B2DACA08700452B6F /* Categories */,
+				0EA7048D2DACA08700452B6F /* Home */,
+				0EA7048F2DACA08700452B6F /* More */,
+				0EA704912DACA08700452B6F /* Profile */,
+				0EA704932DACA08700452B6F /* TabbarView */,
+				0EA704962DACA08700452B6F /* Transaction */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +359,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA7049E2DACA08700452B6F /* MoreOptionsView.swift in Sources */,
+				0EA704A12DACA08700452B6F /* TransactionFormView.swift in Sources */,
 				0EA704582DAC9DBD00452B6F /* PersonalFinanceTrackerV2App.swift in Sources */,
+				0EA7049F2DACA08700452B6F /* ProfileView.swift in Sources */,
 				0EA7045D2DAC9DBD00452B6F /* PersonalFinanceTrackerV2.xcdatamodeld in Sources */,
 				0EA7045F2DAC9DBD00452B6F /* ContentView.swift in Sources */,
+				0EA704A02DACA08700452B6F /* TabbarView.swift in Sources */,
+				0EA704A52DACA16B00452B6F /* CoreDataStack.swift in Sources */,
 				0EA7045A2DAC9DBD00452B6F /* Persistence.swift in Sources */,
+				0EA7049C2DACA08700452B6F /* CategoriesListView.swift in Sources */,
+				0EA704A22DACA08700452B6F /* TransactionsListView.swift in Sources */,
+				0EA7049D2DACA08700452B6F /* HomeView.swift in Sources */,
+				0EA7049B2DACA08700452B6F /* CategoriesFormView.swift in Sources */,
+				0EA7049A2DACA08700452B6F /* BudgetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
