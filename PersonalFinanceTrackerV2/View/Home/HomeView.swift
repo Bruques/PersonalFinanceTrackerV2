@@ -13,6 +13,7 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
+            // TODO: - Change in the future currency format
             Text("Gastos: \(getTransactionsAmmount().formatted(.currency(code: "BRL"))))")
             Image(systemName: "house.fill")
                 .font(.largeTitle)
