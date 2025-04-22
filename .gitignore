@@ -1,0 +1,4 @@
+# Xcode user data
+*.xcuserdatad/
+*.xcscmblueprint
+.DS_Store
