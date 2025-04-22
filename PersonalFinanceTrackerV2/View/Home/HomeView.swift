@@ -13,15 +13,45 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-            // TODO: - Change in the future currency format
-            Text("Gastos: \(getTransactionsAmmount().formatted(.currency(code: "BRL"))))")
-            Image(systemName: "house.fill")
-                .font(.largeTitle)
-            Text("Dashboard View")
-                .font(.title)
+            HStack {
+                incomeContainer
+                Spacer()
+                    .frame(width: 24)
+                expensesContainer
+            }
         }
         .onAppear {
             fetchTransactions()
+        }
+    }
+    
+    var expensesContainer: some View {
+        VStack {
+            Text("Gastos")
+                .font(.title)
+            // TODO: - Change in the future currency format
+            Text(getTransactionsAmmount().formatted(.currency(code: "BRL")))
+                .font(.title2)
+                .padding(12)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 4)
+                        .stroke(.red, lineWidth: 1)
+                }
+        }
+    }
+    
+    var incomeContainer: some View {
+        VStack {
+            Text("Entradas")
+                .font(.title)
+            // TODO: - Change in the future currency format
+            Text(getTransactionsAmmount().formatted(.currency(code: "BRL")))
+                .font(.title2)
+                .padding(12)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 4)
+                        .stroke(.green, lineWidth: 1)
+                }
         }
     }
 }
