@@ -11,11 +11,13 @@ import CoreData
 struct TransactionFormView: View {
     @Environment(\.dismiss) var dismiss
     @FocusState private var isFocused: Bool
+    @State var transactionType: TransactionType
     @State var ammount: Double = 0.0
     @State var date: Date = Date()
     @State var title: String = ""
     @State var categories: [Category] = []
     @State var selectedCategory: Category?
+    
     
     let completion: (FinancialTransaction) -> Void
     
@@ -37,7 +39,7 @@ struct TransactionFormView: View {
                 TextField("Descrição", text: $title)
             }
             .scrollDismissesKeyboard(.interactively)
-            .navigationTitle("Nova despesa")
+            .navigationTitle(getNavigatinoTitle())
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
@@ -54,22 +56,31 @@ struct TransactionFormView: View {
     }
     
     var backButton: some View {
-            Button(action: {
-                dismiss()
-            }, label: {
-                Text("Voltar")
-            })
+        Button(action: {
+            dismiss()
+        }, label: {
+            Text("Voltar")
+        })
+    }
+    
+    var saveButton: some View {
+        Button(action: {
+            saveTransaction()
+        }, label: {
+            Text("Salvar")
+                .font(.headline)
+        })
+        .disabled(!isSaveButtonEnabled())
+    }
+    
+    private func getNavigatinoTitle() -> String {
+        switch transactionType {
+        case .expense:
+            return "Nova despesa"
+        case .income:
+            return "Nova entrada"
         }
-        
-        var saveButton: some View {
-            Button(action: {
-                saveTransaction()
-            }, label: {
-                Text("Salvar")
-                    .font(.headline)
-            })
-            .disabled(!isSaveButtonEnabled())
-        }
+    }
 }
 
 extension TransactionFormView {
@@ -94,6 +105,7 @@ extension TransactionFormView {
         transaction.date = date
         transaction.title = title
         transaction.category = selectedCategory
+        transaction.transactionType = transactionType.rawValue
         CoreDataStack.shared.save()
         completion(transaction)
         dismiss()
@@ -101,7 +113,7 @@ extension TransactionFormView {
 }
 
 #Preview {
-    TransactionFormView() { _ in }
+    TransactionFormView(transactionType: .expense) { _ in }
 }
 
 

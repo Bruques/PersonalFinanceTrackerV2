@@ -30,7 +30,7 @@ struct HomeView: View {
             Text("Gastos")
                 .font(.title)
             // TODO: - Change in the future currency format
-            Text(getTransactionsAmmount().formatted(.currency(code: "BRL")))
+            Text(getTransactionsAmmount(type: .expense).formatted(.currency(code: "BRL")))
                 .font(.title2)
                 .padding(12)
                 .overlay {
@@ -45,7 +45,7 @@ struct HomeView: View {
             Text("Entradas")
                 .font(.title)
             // TODO: - Change in the future currency format
-            Text(getTransactionsAmmount().formatted(.currency(code: "BRL")))
+            Text(getTransactionsAmmount(type: .income).formatted(.currency(code: "BRL")))
                 .font(.title2)
                 .padding(12)
                 .overlay {
@@ -67,8 +67,10 @@ extension HomeView {
         }
     }
     
-    private func getTransactionsAmmount() -> Double {
+    private func getTransactionsAmmount(type: TransactionType) -> Double {
+        
         let ammount = transactions
+            .filter({$0.transactionType == type.rawValue})
             .map({$0.amount})
             .reduce(0, +)
         return ammount
